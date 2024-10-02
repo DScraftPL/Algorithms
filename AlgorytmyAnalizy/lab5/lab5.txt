@@ -1,0 +1,73 @@
+na kolokwium:
+  wyprowadz algorytm
+  na podstawie kodu oblicz
+  opisz co kod robi
+  dane wejsciowe -> jak wyglada tablica wyjsciowa
+  umiejętność obliczenia, zrozumieć algorytm
+
+f(x) = x/(x-1)
+węzeł potrójny, interpolacyjny hermita x [-1, 1/2]
+
+f'(x) = (-1)/(x-1)^2 = -1/(x^2-2x+1)
+f''(x) = (2x-2)/(x-1)^4
+
+Hermit:
+0| 0|-1/1!|-2/2!|
+0| 0|-1|
+0| 0|
+
+pamiętać o dzieleniu przez n!
+
+Wzrost - 110 = Masa
+
+Metoda najmniejszych kwadratów
+
+interesuje nas trend, jak zmienne się zachowują względem innych
+
+w najgorszym wypadku funkcja liniowa, zależy od zależności
+
+suma odchyleń od funkcji jak najmniejsza, minimalizujemy sumę kwadratów różnic
+w celu minimalizacji pochodne itd itd 
+
+g(x) = a0 + a1x albo g(x) = SUMA(od j do n) aj gj(x)
+g0(x) = 1
+g1(x) = x
+
+układ równań
+
+(g0, g0) <- iloczyn skalarny 
+
+| (g0, g0) (g0, g1) | | a0 | = | (coś, coś) |
+| (g1, g0) (g1, g1) | | a1 |   | (coś, coś) |
+
+xi|yi|g0(xi)|g1(xi)|(g0,g0)|(g0,g1)|(g1,g0)|(g1,g1)|(y,g0)|(y,g1)|
+-2| 1|     1|    -2|      1|     -2|     -2|-2*-2=4|   1*1|   1*2|
+-1| 1|     1|    -1|      1|     -1|     -1|-1*-1=1|   1*1|   1*1|
+ 0| 2|     1|     0|      1|      0|      0|      0|   2*1|   2*0|
+ 1| 3|     1|     1|      1|      1|      1|      1|   3*1|   3*1|
+                   |      4|     -2|     -2|      6|     8|     6|
+
+
+można algebraicznie, robić wzorem itd itd.
+ale jest gotowiec (wykład)
+
+tabelką liczymy i odpowiednio wsadzamy 
+
+Układy Czybyszewa:
+
+CO NAJWYŻEJ O JEDEN MNIEJ MIEJSC ZEROWYCH NIŻ FUNKCJI!!!!!11!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+
+g0, g1, g2 ... ,gn - liniowo niezależne
+dowolna kombinacja liniowa i ma byc n miejsce zerowych (o jeden mniej niż funkcji)
+3 funkcje a0 + a1x + a2x^2 - co najwyzej 2 miejsca zerowe, tworzą ukłąd czybyszewa
+
+2 funckje g0(x) = 1, g1(x) = x^2
+nie spełniają, bo 1-x^2 ma 2 miejsca zerowe
+
+czy 1,cosx i cos^2x
+ 
+sprawdzamy 1 + cos(x) + cos^2(x) = 0
+definicja, nie duzo obliczeń, tylko sprawdzanie 
+
+2 - |x| nie spełnia, dla g0 = 1, g1 = |x|
+

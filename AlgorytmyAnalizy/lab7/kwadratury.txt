@@ -1,0 +1,21 @@
+zadanie 1
+
+całka od 0 do 6 f(x) dx 
+K(f) = A0f(0)+ A1f(6);
+wyprowadź wzory na współczynniki 
+
+I metoda z definicji
+
+całka z wielomianu bazowego lagrange
+
+II metoda dokładnie na P1
+
+P1 - bazowe funkcje, tutaj 1,x
+ewentualeni wiecej
+
+całka z funkcji bazowych na przedziale całkowania
+
+
+Jak sprawdzić czy jest dokładna na p2?
+na P2: 1,x,x^2 musi być dokładna 
+p(x) = x^2, jeżeli K_1(x^2) = całka od 0 do 6 z x^2 po dx

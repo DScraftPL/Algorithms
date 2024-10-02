@@ -1,0 +1,47 @@
+interpolacja Hermite'a - interpolacja z węzłami wielokrotnymi, polega na poszukiwaniu wielomianu, który w węzłach ma dane nie tylko wartości, ale i wartości pochodnych
+p(x0) = f(x0)
+p'(x0) = f'(x0)
+p(x1) = f(x1)
+pochodne można liczyc z ilorazów różnicowych (wzór Newtona)
+pochodne występujące z rachunków są unormowane, trzebza podzielić przez k!
+
+wyznaczamy numerycznie ze wzoru Newotna, trzeba stworzyć tablice wyrazów różnicowych f[x0], f[x0,x1] itd.
+
+kwadratury GAUSSA
+jezus maria co tu sie dzieje
+
+egzamin:
+interpolacja 
+GAUSS 
+nicc wiecej 
+zerujemy wiersze itd
+
+
+A
+1 2 3 -1
+2 3 4 -1
+2 4 6 2
+krok 1 zerujemy pierwsszą kolumnę
+1 2 3 -1
+0 3-2*2 4-3*2 -1-2*(-1)
+0 4-4 6-6 2+2
+
+1 2 3 -1
+0 -1 -2 1
+0 0 0 4
+
+troche kaplica, przestawmy wierszez
+
+2 3 4 -1
+1 2 3 1
+2 4 6 2
+
+2 3 4 -1
+0 0.5 1 1.5
+0 1 2 3
+
+2 3 4 -1
+0 1 2 3
+0 0 0 0 <- KAPLICA
+
+

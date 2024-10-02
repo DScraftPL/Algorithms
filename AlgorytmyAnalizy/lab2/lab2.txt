@@ -1,0 +1,29 @@
+void HornerU(int n, double a[], double c){
+  for(int j=n; j>=0; j--){
+    for(int i=1; i<=n; i++){
+      a[i] = a[i-1]*c + a[i];
+    }
+    cout << a[j] << " ";
+  }
+  cout << endl;
+}
+
+double interpolacja(int n, int c, double x[], double y[]){
+  double l=0, mianownik, licznik;
+  for(int i=0; i<n; i++){
+    mianownik = 1, licznik = 1;
+    for(int j=0; j<n; j++){
+      if(i != j){
+        mianownik *= (c-x[j]);
+        licznik *= (x[i]-x[j]);
+      }
+    }
+    cout << mianownik << " " << licznik << " ";
+    double temp = mianownik/licznik;
+    cout << temp << endl;
+    l+=y[i]*temp;
+  }
+  return l;
+}
+
+
